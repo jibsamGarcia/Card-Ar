@@ -356,13 +356,13 @@ AFRAME.registerComponent("linkhandler", {
 		this.el.addEventListener("click", e => {
 			if (this.el === this.button_linkedin) {
 				this.audio.play();
-				window.open("https://www.linkedin.com/in/mariam-raad", "_blank", true);
+				window.open("https://www.facebook.com/FGEGuanajuato", "_blank", true);
 			} else if (this.el === this.button_xing) {
 				this.audio.play();
-				window.open("https://www.xing.com/profile/Mariam_Raad/cv", "_blank", true);
+				window.open("https://www.poderjudicial-gto.gob.mx/pdfs/Ley%20Organica%20de%20la%20Fiscalia%20General%20del%20Estado%20de%20Guanajuato%20febrero%202019.pdf", "_blank", true);
 			} else if (this.el === this.button_website) {
 				this.audio.play();
-				window.open("https://github.com/MariamRaad", "_blank", true);
+				window.open("https://portal.fgeguanajuato.gob.mx/", "_blank", true);
 			} 
 		})
 	}
