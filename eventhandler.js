@@ -204,7 +204,7 @@ AFRAME.registerComponent("forwardhandler", {
 				this.button_linkedin.setAttribute("visible", true);
 				this.button_xing.setAttribute("visible", true);
 				this.button_website.setAttribute("visible", true);
-				this.button_gps.setAttribute("visible", true);
+				
 				this.button_backward_4.setAttribute("visible", true);
 			}
 		})
@@ -263,7 +263,7 @@ AFRAME.registerComponent("backwardhandler", {
 		this.button_linkedin = document.querySelector("#button_linkedin");
 		this.button_xing = document.querySelector("#button_xing");
 		this.button_website = document.querySelector("#button_website");
-		this.button_gps = document.querySelector("#button_gps");
+		
 		this.button_backward_4 = document.querySelector("#button_backward_4");
 		
 		this.button_play_3 = document.querySelector("#button_play_3");
@@ -331,7 +331,7 @@ AFRAME.registerComponent("backwardhandler", {
 				this.button_linkedin.setAttribute("visible", false);
 				this.button_xing.setAttribute("visible", false);
 				this.button_website.setAttribute("visible", false);
-				this.button_gps.setAttribute("visible", false);
+				
 				this.button_backward_4.setAttribute("visible", false);
 			
 				this.button_play_3.setAttribute("visible", true);
@@ -354,7 +354,7 @@ AFRAME.registerComponent("linkhandler", {
 		this.button_linkedin = document.querySelector("#button_linkedin");
 		this.button_xing = document.querySelector("#button_xing");
 		this.button_website = document.querySelector("#button_website");
-		this.button_gps = document.querySelector("button_gps");
+		
 		
 		this.audio = document.querySelector("#asset_audio_click");
 		
@@ -368,9 +368,6 @@ AFRAME.registerComponent("linkhandler", {
 			} else if (this.el === this.button_website) {
 				this.audio.play();
 				window.open("https://portal.fgeguanajuato.gob.mx/", "_blank", true); 
-			} else if (this.el === this.button_gps) {
-				this.audio.play();
-				window.open("https://innovacion.fgeguanajuato.gob.mx:5501/gps", "_blank", true);
 			}
 		})
 	}
