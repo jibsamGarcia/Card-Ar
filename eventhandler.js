@@ -134,7 +134,6 @@ AFRAME.registerComponent("forwardhandler", {
 		this.button_linkedin = document.querySelector("#button_linkedin");
 		this.button_xing = document.querySelector("#button_xing");
 		this.button_website = document.querySelector("#button_website");
-		this.button_gps = document.querySelector("#button_gps");
 		this.button_backward_4 = document.querySelector("#button_backward_4");
 		
 		this.audio = document.querySelector("#asset_audio_click");
@@ -204,7 +203,6 @@ AFRAME.registerComponent("forwardhandler", {
 				this.button_linkedin.setAttribute("visible", true);
 				this.button_xing.setAttribute("visible", true);
 				this.button_website.setAttribute("visible", true);
-				
 				this.button_backward_4.setAttribute("visible", true);
 			}
 		})
@@ -263,7 +261,6 @@ AFRAME.registerComponent("backwardhandler", {
 		this.button_linkedin = document.querySelector("#button_linkedin");
 		this.button_xing = document.querySelector("#button_xing");
 		this.button_website = document.querySelector("#button_website");
-		
 		this.button_backward_4 = document.querySelector("#button_backward_4");
 		
 		this.button_play_3 = document.querySelector("#button_play_3");
@@ -331,7 +328,6 @@ AFRAME.registerComponent("backwardhandler", {
 				this.button_linkedin.setAttribute("visible", false);
 				this.button_xing.setAttribute("visible", false);
 				this.button_website.setAttribute("visible", false);
-				
 				this.button_backward_4.setAttribute("visible", false);
 			
 				this.button_play_3.setAttribute("visible", true);
@@ -355,7 +351,6 @@ AFRAME.registerComponent("linkhandler", {
 		this.button_xing = document.querySelector("#button_xing");
 		this.button_website = document.querySelector("#button_website");
 		
-		
 		this.audio = document.querySelector("#asset_audio_click");
 		
 		this.el.addEventListener("click", e => {
@@ -367,8 +362,8 @@ AFRAME.registerComponent("linkhandler", {
 				window.open("https://www.facebook.com/FGEGuanajuato", "_blank", true);
 			} else if (this.el === this.button_website) {
 				this.audio.play();
-				window.open("https://portal.fgeguanajuato.gob.mx/", "_blank", true); 
-			}
+				window.open("https://portal.fgeguanajuato.gob.mx/", "_blank", true);
+			} 
 		})
 	}
 })
