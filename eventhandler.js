@@ -132,7 +132,7 @@ AFRAME.registerComponent("forwardhandler", {
 		
 		this.description_4 = document.querySelector("#description_4");
 		this.button_linkedin = document.querySelector("#button_linkedin");
-		this.button_gps = documnet.querySelector("#button_gps");
+		
 		this.button_xing = document.querySelector("#button_xing");
 		this.button_website = document.querySelector("#button_website");
 		this.button_backward_4 = document.querySelector("#button_backward_4");
@@ -202,7 +202,7 @@ AFRAME.registerComponent("forwardhandler", {
 			
 				this.description_4.setAttribute("visible", true);
 				this.button_linkedin.setAttribute("visible", true);
-				this.button_gps.setAttribute("visible", true);
+				
 				this.button_xing.setAttribute("visible", true);
 				this.button_website.setAttribute("visible", true);
 				this.button_backward_4.setAttribute("visible", true);
@@ -261,7 +261,7 @@ AFRAME.registerComponent("backwardhandler", {
 		/* Transition from scene 4(Offboarding/Weblinks) to scene 3(FlyingEagle)  */
 		this.description_4 = document.querySelector("#description_4");
 		this.button_linkedin = document.querySelector("#button_linkedin");
-		this.button_gps = document.querySelector("#button_gps");
+	
 		this.button_xing = document.querySelector("#button_xing");
 		this.button_website = document.querySelector("#button_website");
 		this.button_backward_4 = document.querySelector("#button_backward_4");
@@ -329,7 +329,7 @@ AFRAME.registerComponent("backwardhandler", {
 				
 				this.description_4.setAttribute("visible", false);
 				this.button_linkedin.setAttribute("visible", false);
-				this.button_gps.setAttribute("visible", false);
+			
 				this.button_xing.setAttribute("visible", false);
 				this.button_website.setAttribute("visible", false);
 				this.button_backward_4.setAttribute("visible", false);
@@ -352,7 +352,7 @@ AFRAME.registerComponent("linkhandler", {
 	},
 	addListeners: function() {
 		this.button_linkedin = document.querySelector("#button_linkedin");
-		this.button_ = document.querySelector("#button_gps");
+		
 		this.button_xing = document.querySelector("#button_xing");
 		this.button_website = document.querySelector("#button_website");
 		
@@ -365,9 +365,6 @@ AFRAME.registerComponent("linkhandler", {
 			} else if (this.el === this.button_xing) {
 				this.audio.play();
 				window.open("https://www.facebook.com/FGEGuanajuato", "_blank", true);
-			} else if (this.el === this.button_gps) {
-				this.audio.play();
-				window.open("http://innovacion.fgeguanajuato.gob.mx:5501/gps", "_blank", true);
 			} else if (this.el === this.button_website) {
 				this.audio.play();
 				window.open("https://portal.fgeguanajuato.gob.mx/", "_blank", true);
