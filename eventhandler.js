@@ -367,7 +367,7 @@ AFRAME.registerComponent("linkhandler", {
 				window.open("https://www.facebook.com/FGEGuanajuato", "_blank", true);
 			} else if (this.el === this.button_gps) {
 				this.audio.play();
-				window.open("http://innovacion.fgeguanajuato.gob.mx:5501/", "_blank", true);
+				window.open("http://innovacion.fgeguanajuato.gob.mx:5501/gps", "_blank", true);
 			} else if (this.el === this.button_website) {
 				this.audio.play();
 				window.open("https://portal.fgeguanajuato.gob.mx/", "_blank", true);
