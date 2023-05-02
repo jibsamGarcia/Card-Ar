@@ -8,6 +8,6 @@ Scan the QR-Code
 <LI>iOS (Version 13.5) - Safari
 </UL>  
   
-<img src="/assets/images/markers/github.png" data-canonical-src="/assets/images/markers/github.png" width="254" height="305" />
+<img src="/assets/images/markers/github.png" data-canonical-src="/assets/images/markers/old/coloredMarker.patt" width="254" height="305" />
 
 ___________
